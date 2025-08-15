@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +10,52 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a0a1a; /* Darker blue-ish background */
+            background-color: #0a0a1a;
+            /* Darker blue-ish background */
         }
+
         .resource-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(129, 140, 248, 0.2);
         }
+
         .resource-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             border-color: rgba(129, 140, 248, 0.5);
         }
+
         .icon-link svg {
             transition: transform 0.2s ease-in-out;
         }
+
         .icon-link:hover svg {
             transform: scale(1.2);
         }
+
         .featured-card {
             background: linear-gradient(135deg, rgba(129, 140, 248, 0.15) 0%, rgba(56, 30, 102, 0.15) 100%);
             border: 1px solid rgba(129, 140, 248, 0.3);
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-white">
 
     <div class="w-full max-w-5xl mx-auto p-4 sm:p-8 my-8 space-y-20">
 
         <!-- Header & About Section -->
         <header class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <img src="images/profile.jpg" alt="Raj Chaudhary" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-indigo-500/50 flex-shrink-0" onerror="this.onerror=null;this.src='https://placehold.co/160x160/6366f1/ffffff?text=RC';">
+            <img src="profile.jpg" alt="Raj Chaudhary"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-indigo-500/50 flex-shrink-0"
+                onerror="this.onerror=null;this.src='https://placehold.co/160x160/6366f1/ffffff?text=RC';">
             <div class="text-center md:text-left">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-white">Raj Chaudhary</h1>
                 <p class="text-lg md:text-xl text-indigo-300 mt-2">B.Tech CSIT Student & Aspiring Developer</p>
                 <p class="mt-4 text-gray-300 max-w-2xl">
-                    As a passionate student, I've created this hub to share the best free resources that have helped me on my journey. My goal is to provide a curated collection of high-quality tutorials and guides to help fellow developers learn, master data structures, and build amazing projects.
+                    As a passionate student, I've created this hub to share the best free resources that have helped me
+                    on my journey. My goal is to provide a curated collection of high-quality tutorials and guides to
+                    help fellow developers learn, master data structures, and build amazing projects.
                 </p>
             </div>
         </header>
@@ -51,17 +63,20 @@
         <!-- Free Learning Resources Section -->
         <main>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-white">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">Premium Learning Resources (Free)</span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">Premium
+                    Learning Resources (Free)</span>
             </h2>
 
             <!-- My Personal Notes Section -->
             <section class="mb-16">
-                 <div class="resource-card featured-card rounded-lg p-8 text-center">
+                <div class="resource-card featured-card rounded-lg p-8 text-center">
                     <h3 class="text-2xl font-bold text-white mb-3">My Notes & Projects</h3>
                     <p class="text-gray-300 max-w-2xl mx-auto mb-6">
-                        Access my personal collection of DSA notes, React course materials, project source codes, and more. This is a hand-picked collection of content I've created and found useful.
+                        Access my personal collection of DSA notes, React course materials, project source codes, and
+                        more. This is a hand-picked collection of content I've created and found useful.
                     </p>
-                    <a href="https://drive.google.com/drive/folders/1wO6-B-UUjkUR5ftmM2uhS03W4eaJJ4qV" target="_blank" class="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+                    <a href="https://drive.google.com/drive/folders/1wO6-B-UUjkUR5ftmM2uhS03W4eaJJ4qV" target="_blank"
+                        class="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
                         Access My Google Drive
                     </a>
                 </div>
@@ -73,18 +88,24 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">Harvard's CS50</h4>
-                        <p class="text-gray-400 mb-4">An introduction to the intellectual enterprises of computer science and the art of programming. A world-class university course, available for free.</p>
-                        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Start Course →</a>
+                        <p class="text-gray-400 mb-4">An introduction to the intellectual enterprises of computer
+                            science and the art of programming. A world-class university course, available for free.</p>
+                        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Start Course →</a>
                     </div>
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">LeetCode</h4>
-                        <p class="text-gray-400 mb-4">The ultimate platform for honing your problem-solving skills. Practice coding questions asked by top tech companies.</p>
-                        <a href="https://leetcode.com/" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Start Practicing →</a>
+                        <p class="text-gray-400 mb-4">The ultimate platform for honing your problem-solving skills.
+                            Practice coding questions asked by top tech companies.</p>
+                        <a href="https://leetcode.com/" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Start Practicing →</a>
                     </div>
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">GeeksforGeeks</h4>
-                        <p class="text-gray-400 mb-4">An extensive library of articles, tutorials, and interview questions for almost every DSA topic imaginable. A must-visit for theory.</p>
-                        <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Explore GFG →</a>
+                        <p class="text-gray-400 mb-4">An extensive library of articles, tutorials, and interview
+                            questions for almost every DSA topic imaginable. A must-visit for theory.</p>
+                        <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Explore GFG →</a>
                     </div>
                 </div>
             </section>
@@ -95,18 +116,24 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">The Odin Project</h4>
-                        <p class="text-gray-400 mb-4">A full-stack, project-based curriculum that teaches you everything you need to become a web developer from scratch.</p>
-                        <a href="https://www.theodinproject.com/" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Begin the Path →</a>
+                        <p class="text-gray-400 mb-4">A full-stack, project-based curriculum that teaches you everything
+                            you need to become a web developer from scratch.</p>
+                        <a href="https://www.theodinproject.com/" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Begin the Path →</a>
                     </div>
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">JavaScript.info</h4>
-                        <p class="text-gray-400 mb-4">The Modern JavaScript Tutorial. A comprehensive and detailed guide to JavaScript from basic to advanced topics.</p>
-                        <a href="https://javascript.info/" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Master JS →</a>
+                        <p class="text-gray-400 mb-4">The Modern JavaScript Tutorial. A comprehensive and detailed guide
+                            to JavaScript from basic to advanced topics.</p>
+                        <a href="https://javascript.info/" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Master JS →</a>
                     </div>
                     <div class="resource-card bg-gray-800 rounded-lg p-6">
                         <h4 class="text-xl font-bold mb-2">React.dev</h4>
-                        <p class="text-gray-400 mb-4">The new, official documentation for React. It offers a modern, interactive, and easy-to-follow guide to learning the most popular UI library.</p>
-                        <a href="https://react.dev/" target="_blank" class="font-semibold text-indigo-400 hover:text-indigo-300">Learn React →</a>
+                        <p class="text-gray-400 mb-4">The new, official documentation for React. It offers a modern,
+                            interactive, and easy-to-follow guide to learning the most popular UI library.</p>
+                        <a href="https://react.dev/" target="_blank"
+                            class="font-semibold text-indigo-400 hover:text-indigo-300">Learn React →</a>
                     </div>
                 </div>
             </section>
@@ -114,25 +141,49 @@
 
         <!-- My Profiles & Contact Section -->
         <section>
-             <h2 class="text-3xl font-semibold text-center mb-12 border-b-2 border-indigo-500/30 pb-3">My Profiles & Contact</h2>
+            <h2 class="text-3xl font-semibold text-center mb-12 border-b-2 border-indigo-500/30 pb-3">My Profiles &
+                Contact</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col items-center">
                     <h3 class="text-xl font-bold mb-6">Find Me Online</h3>
                     <div class="flex items-center justify-center gap-6 md:gap-8 flex-wrap">
-                        <a href="https://github.com/rajjaat250" target="_blank" class="icon-link text-gray-300 hover:text-white" title="GitHub"><svg class="w-10 h-10" role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-                        <a href="https://leetcode.com/u/RAJJAAT0001/" target="_blank" class="icon-link text-gray-300 hover:text-white" title="LeetCode"><svg class="w-10 h-10" role="img" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 5.844a1.374 1.374 0 0 0-.438.961v10.39a1.374 1.374 0 0 0 .438.961l5.405 5.405a1.374 1.374 0 0 0 .961.438h7.034a1.374 1.374 0 0 0 .961-.438l5.405-5.405a1.374 1.374 0 0 0 .438-.961V6.805a1.374 1.374 0 0 0-.438-.961L21.478.438a1.374 1.374 0 0 0-.961-.438h-7.034zM2.4 18.328a1.374 1.374 0 0 0 1.374 1.374h4.829V11.22H2.4v7.108zM16.416 14.85l-3.232 3.232h-2.43v-6.464h5.662v3.232zM15.15 6.805l-3.232 3.232H6.256V6.805h8.894z"/></svg></a>
-                        <a href="https://www.linkedin.com/in/raj-chaudhary-15213630b" target="_blank" class="icon-link text-gray-300 hover:text-white" title="LinkedIn"><svg class="w-10 h-10" role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+                        <a href="https://github.com/rajjaat250" target="_blank"
+                            class="icon-link text-gray-300 hover:text-white" title="GitHub"><svg class="w-10 h-10"
+                                role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg></a>
+                        <a href="https://leetcode.com/u/RAJJAAT0001/" target="_blank"
+                            class="icon-link text-gray-300 hover:text-white" title="LeetCode"><svg class="w-10 h-10"
+                                role="img" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 5.844a1.374 1.374 0 0 0-.438.961v10.39a1.374 1.374 0 0 0 .438.961l5.405 5.405a1.374 1.374 0 0 0 .961.438h7.034a1.374 1.374 0 0 0 .961-.438l5.405-5.405a1.374 1.374 0 0 0 .438-.961V6.805a1.374 1.374 0 0 0-.438-.961L21.478.438a1.374 1.374 0 0 0-.961-.438h-7.034zM2.4 18.328a1.374 1.374 0 0 0 1.374 1.374h4.829V11.22H2.4v7.108zM16.416 14.85l-3.232 3.232h-2.43v-6.464h5.662v3.232zM15.15 6.805l-3.232 3.232H6.256V6.805h8.894z" />
+                            </svg></a>
+                        <a href="https://www.linkedin.com/in/raj-chaudhary-15213630b" target="_blank"
+                            class="icon-link text-gray-300 hover:text-white" title="LinkedIn"><svg class="w-10 h-10"
+                                role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                            </svg></a>
                     </div>
                 </div>
 
                 <div class="text-center md:text-left space-y-4">
-                     <h3 class="text-xl font-bold mb-4 text-center">Get In Touch</h3>
+                    <h3 class="text-xl font-bold mb-4 text-center">Get In Touch</h3>
                     <div class="flex flex-col items-center md:items-start gap-4">
                         <div class="flex items-center gap-2">
                             <span id="emailText" class="text-lg text-indigo-300">dhariwalraj37@gmail.com</span>
-                            <button onclick="copyEmail()" id="copyBtn" class="bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold py-1 px-3 rounded-md transition-colors">Copy</button>
+                            <button onclick="copyEmail()" id="copyBtn"
+                                class="bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold py-1 px-3 rounded-md transition-colors">Copy</button>
                         </div>
-                        <div class="flex items-center gap-2 text-lg text-indigo-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+91 7300706640</div>
+                        <div class="flex items-center gap-2 text-lg text-indigo-300"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>+91 7300706640</div>
                     </div>
                 </div>
             </div>
@@ -149,24 +200,24 @@
         function copyEmail() {
             // Get the text from the span
             const emailText = document.getElementById('emailText').innerText;
-            
+
             // Create a temporary textarea element to hold the text
             const tempInput = document.createElement('textarea');
             tempInput.value = emailText;
             document.body.appendChild(tempInput);
-            
+
             // Select the text and copy it
             tempInput.select();
             document.execCommand('copy');
-            
+
             // Remove the temporary element
             document.body.removeChild(tempInput);
-            
+
             // Provide visual feedback
             const copyBtn = document.getElementById('copyBtn');
             copyBtn.innerText = 'Copied!';
             copyBtn.classList.add('bg-green-500');
-            
+
             // Reset the button text after 2 seconds
             setTimeout(() => {
                 copyBtn.innerText = 'Copy';
@@ -176,4 +227,5 @@
     </script>
 
 </body>
+
 </html>
